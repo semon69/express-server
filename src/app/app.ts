@@ -17,8 +17,6 @@ const logger = (req: Request, res: Response, next: NextFunction) =>{
 }
 
 
-
-
 userRouter.post('/create-user', (req: Request, res: Response)=> {
     const user = req.body
     console.log(user)
@@ -40,7 +38,6 @@ courseRouter.post('/create-course', (req: Request, res: Response) => {
     
 }
 )
-
 
 app.get('/',logger, (req: Request, res: Response, next: NextFunction) => {
     
